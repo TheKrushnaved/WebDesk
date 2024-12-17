@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+/* General body styles */
+body {
+    margin: 0;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    font-family: "Outfit", sans-serif;
+    transition: background 1s ease-in-out; /* Smooth transition for background */
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: white;
+}
+
+.intro h4, .intro h1 footer{
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+}
+
+.intro h1 {
+    font-weight: 700;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Gallery styles */
+.gallery {
+    margin: 5% auto;
+    width: 80%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+}
+
+.box {
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000092;
+    background-blend-mode: hard-light;
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
